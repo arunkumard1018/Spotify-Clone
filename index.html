@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music</title>
+    <link rel="stylesheet" href="css/input.css">
+
+    <link rel="icon" href="icons/Spotify_icon-icons.com_66783.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/Spotify_icon-icons.com_66783.ico" type="image/x-icon">
+
+</head>
+
+<body class="bg-black">
+    <!-- Lest side Container -->
+    <div class="container text-white flex m-3">
+        <div class="left w-[25vw]">
+            <!-- left side Header section -->
+            <div class="left-header bg-customBlack text-white rounded-lg space-y-5 p-5">
+                <img class="invert hover:cursor-pointer" src="icons/spotify-logo.svg" alt="logo">
+                <div class="home flex space-x-5 hover:cursor-pointer">
+                    <img class="w-[25px] invert" src="icons/home.svg" alt="home">
+                    <h2 class="font-bold">Home</h2>
+                </div>
+                <div class="search flex space-x-5 hover:cursor-pointer">
+                    <img class="w-[25px] invert-[0.5] hover:invert" src="icons/search.svg" alt="home">
+                    <h2 class="font-bold text-gray-500 hover:text-white">Search</h2>
+                </div>
+            </div>
+            <!-- left side library container -->
+            <div class="library bg-customBlack rounded-lg mt-2 space-y-5 p-5">
+                <div class="flex justify-between">
+                    <div class="logo flex items-center space-x-5  hover:cursor-pointer">
+                        <img class="w-[25px] invert-[0.5] hover:invert" src="icons/library.svg" alt="library">
+                        <h2 class="font-bold text-gray-500 hover:text-white">Your Library</h2>
+                    </div>
+                    <div class="plus p-2 rounded-full hover:bg-gray-900 hover:cursor-pointer">
+                        <img class="invert w-[15px]" src="icons/plus-icon.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="playlist h-[180px] overflow-auto scrollbar-hide">
+                    <div class="create text-white bg-customBgPaylist p-4 rounded-lg mb-2 overflow-y-auto h-[150px]">
+                        <h1 class="font-bold text-md mb-2">Create Youre first playlist</h1>
+                        <p class="font-bold text-sm">it's easy, we'll help you</p>
+                        <button class="border mt-4 py-1 px-2 rounded-full text-black bg-white text-sm font-bold">Create playlist</button>
+                    </div>
+                    <div class="Browse text-white bg-customBgPaylist p-4 rounded-lg  overflow-y-auto">
+                        <h1 class="font-bold text-md mb-2">Let's find some podcasts to follow</h1>
+                        <p class="font-bold text-sm">we'll keep you updated on new eposodes</p>
+                        <button class="border mt-4 py-1 px-2 rounded-full text-black bg-white text-sm font-bold">Browse podcasts</button>
+                    </div>
+                </div>
+                <!-- About section -->
+                <div class="about">
+                    <div class="flex flex-col space-y-5 font-bold text-gray-500">
+                        <div class="flex space-x-4">
+                            <div><a href="https://www.spotify.com/in-en/legal/" id="" class="text-xs"><span>Legal</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/privacy/" id="" class="text-xs"><span>Privacy Center</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" class="text-xs"><span>Privacy Policy</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" class="text-xs"><span>Cookies</span></a></div>
+                        </div>
+                        <div class="flex space-x-4 ">
+                            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="" class="text-xs"><span>About Ads</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/accessibility/" id="" class="text-xs"><span>Accessibility</span></a></div>
+                        </div>
+                        <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener" class="text-xs"><span>Cookies</span></a>
+                    </div>
+                    <div class="text-white mt-5 border inline-flex items-center space-x-1 py-1 px-3 rounded-full">
+                        <span><img class="invert w-4" src="icons/global.svg" alt=""></span>
+                        <button data-testid="language-selection-button" class="">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right container -->
+        <div class="right  w-[75vw]  bg-customBlackRightHeader rounded-lg mx-2">
+            <div class="fixed z-50">
+                <div class="right-header p-1 flex justify-between space-x-[550px]">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-black p-2 rounded-full"><img  class="invert-[0.5] w-4" src="icons/left-arrow.svg" alt="left"></span>
+                        <span class="bg-black p-2 rounded-full"><img  class="invert-[0.5] w-4" src="icons/right-arrow.svg" alt="left"></span>
+                    </div>
+                    <div class="space-x-4 mr-7">
+                        <span class="text-gray-400 font-bold hover:text-white"><Button>Premium</Button></span>
+                        <span class="text-gray-400 font-bold hover:text-white"><Button>Support</Button></span>
+                        <span class="text-gray-400 font-bold hover:text-white"><Button>Download</Button></span>
+                        <span class="text-2xl text-gray-500">|</span>
+                        <span class="text-gray-400 font-bold hover:text-white"><Button>Sign up</Button></span>
+                        <span><button class="border py-3 px-8 rounded-full text-black bg-white text-md font-bold">Log in</button></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Playlist -->
+            <div class="mt-16 bg-customBgMainPaylist">
+                <div class="playlist  rounded-lg">
+                    <div class="playlist-header flex justify-between mx-4 p-2 items-center">
+                        <h1 class="text-2xl font-bold">Spotify Playlist</h1>
+                        <p class="text-xs font-bold text-gray-400">Show all</p>
+                    </div>
+                    <div class="playlist flex justify-start mx-8 space-x-5">
+                        <div class="card flex w-1/5 p-4 bg-customBgPaylistCard  my-3 justify-centert items-center rounded-lg">
+                            <div class="space-y-1">
+                                <img class="w-full h-44 rounded-lg" src="images/img-1.jpg" alt="track-img">
+                                <h1 class="font-bold">lofi Beats</h1>
+                                <p class="h-9 overflow-hidden text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, minus?</p>
+                            </div>
+                        </div>
+                        <div class="card flex w-1/5 p-4 bg-customBgPaylistCard  my-3 justify-centert items-center rounded-lg">
+                            <div class="space-y-1">
+                                <img class="w-full h-44 rounded-lg" src="images/img-2.jpg" alt="track-img">
+                                <h1 class="font-bold">lofi Beats</h1>
+                                <p class="h-9 overflow-hidden text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, minus?</p>
+                            </div>
+                        </div>
+                        <div class="card flex w-1/5 p-4 bg-customBgPaylistCard  my-3 justify-centert items-center rounded-lg">
+                            <div class="space-y-1">
+                                <img class="w-full h-44 rounded-lg" src="images/img-3.jpg" alt="track-img">
+                                <h1 class="font-bold">lofi Beats</h1>
+                                <p class="h-9 overflow-hidden text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, minus?</p>
+                            </div>
+                        </div>
+                        <div class="card flex w-1/5 p-4 bg-customBgPaylistCard  my-3 justify-centert items-center rounded-lg">
+                            <div class="space-y-1">
+                                <img class="w-full h-44 rounded-lg" src="images/img-4.jpg" alt="track-img">
+                                <h1 class="font-bold">lofi Beats</h1>
+                                <p class="h-9 overflow-hidden text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, minus?</p>
+                            </div>
+                        </div>
+                        <div class="card flex w-1/5 p-4 bg-customBgPaylistCard  my-3 justify-centert items-center rounded-lg">
+                            <div class="space-y-1">
+                                <img class="w-full h-44 rounded-lg" src="images/img-5.jpg" alt="track-img">
+                                <h1 class="font-bold">lofi Beats</h1>
+                                <p class="h-9 overflow-hidden text-xs text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, minus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="abot-right m-10 mt-20 flex justify-between">
+                <div class="aboutlist flex space-x-24" >
+                    <div class="lst text-gray-400 space-y-2" >
+                        <h1 class="font-bold text-white">Company</h1>
+                        <p>About</p>
+                        <p>Carrers</p>
+                        <p>For the Record</p>
+                    </div>
+                    <div class="lst text-gray-400 space-y-2" >
+                        <h1 class="font-bold text-white">Communities</h1>
+                        <p>For Artists</p>
+                        <p>developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                      
+                    </div>
+                    <div class="lst text-gray-400 space-y-2" >
+                        <h1 class="font-bold text-white">Usefull Links</h1>
+                        <p>Support</p>
+                        <p>Free Mobile app</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="logos flex space-x-4">
+                        <div class="bg-customSocialBg p-4 rounded-full"><img class="invert w-4" src="icons/instagram.svg" alt="ig"></div>
+                        <div class="bg-customSocialBg p-4 rounded-full"><img class="invert w-4" src="icons/twitter.svg" alt="ig"></div>
+                        <div class="bg-customSocialBg p-4 rounded-full"><img class="invert w-4" src="icons/facebook.svg" alt="ig"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
